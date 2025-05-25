@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 10px;
+    background:rgb(0, 170, 255);
+    /* background: linear-gradient(to right, #74ebd5, #ACB6E5); */
+
+
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.start img{
+    width: 120px;
+}
+.start{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.start h1{
+    font-size: 55px;
+}
+.start input{
+    margin-left: 50px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid rgb(6, 76, 117);
+    padding: 0px 25px;
+    width: 400px;
+    height: 50px;
+    font-size: 25px;
+}
+.but button{
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+   
+    background-color: aquamarine;
+    
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 50%; */
+    margin-top: 15px;
+    font-size: 30px;
+    
+}
+.main .left{
+    width: 15%;
+    background: rgb(0, 102, 255);
+    padding: 15px;
+
+    /* padding: 5px; */
+}
+.main .left div{
+    margin-top: 10px;
+}
+.main .left div:hover{
+    font-weight: bold;
+}
+.main .right{
+    width: 83%;
+    height: 90vh;
+    background: rgb(82, 192, 211);
+    padding: 5px;
+    
+}
+
+.main .right .nav{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+
+}
+
+.depart select{
+    width: 150px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 5px;
+}
+hr{
+    height: 3px;
+   
+    background-color: #0c3d3a;
+    border: none;
+}
+.Teaching , .NonTeaching{
+    margin: 34px 10px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: scroll;
+    height: 70vh;
+}
+.NonTeaching{
+    display: none;
+}
+
+.card{
+    background-color: wheat;
+    width: 18%;
+    height: 32vh;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+
+    border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card :hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    padding: 13px 0px;
+   width: 90%;
+   height: 60%;
+   border-radius: 20px;
+}
+.card p{
+    margin: 10px;
+    font-size: 25px;
+}
+.proinfo{
+    margin: 30px;
+    padding: 50px;
+    display: flex;
+        justify-content: center;
+        gap: 50px;
+}
+.profi img{
+    border-radius: 20px;
+    width: 400px;
+    height: 300px;
+}
+.bolet{
+    margin-top: 30px;
+   display: flex;
+   flex-direction: column;
+   font-size: 30px;
+}
+.bolet label{
+    font-weight: bold;
+}
+.detail{
+    margin: 50px;
+    width: 45vw;
+    font-size: 30px;
+    text-align: justify;
+}
+#back{
+    height: 30px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}

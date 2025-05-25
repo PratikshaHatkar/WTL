@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmployeeDirectory</title>
+    <!-- <link rel="stylesheet" href="https://sets.hugeicons.com/YOUR-SET-ID.css" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+</head>
+<body>
+    <div class="home">
+        <div class="header">
+             <div class="start">
+                <img src="https://www.svkm-iot.ac.in/wp-content/uploads/2023/10/1000100148.png" alt="">
+                <h1>Eddy</h1>
+                <input id="searchInput" type="text" placeholder="Search Employee Name">
+             </div>
+            <div class="but">
+                <button onclick="window.location.href='../back/index.php'">Login</button>
+                <button onclick="window.location.href='../back/index.php'">Sign Up</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left">
+                <div class="hamburg">
+                    <span class="material-symbols-outlined">
+                        menu
+                        </span>
+                   
+                </div>
+                <div>Home</div>
+                <div>upadate</div>
+                <div class="depart">department
+                    <select name="" id="">
+                        <option value="computer">Computer</option>
+                        <option value="it">IT</option>
+                        <option value="elec">Electrical</option>
+                    </select>
+                </div>
+                <div>setting</div>
+                <div>About us</div>
+
+                <div></div>
+            </div>
+            <div class="right">
+               <div class="nav">
+                   <div onclick="teaching()" class="teach">Teaching</div>
+                   <div onclick="nonteaching()" class="nonteach">Non Teaching</div>
+               </div>
+               <hr>
+               <div  id="cardContainer" class="Teaching">
+                   <div  onclick="profileDetail()" class="card" data-name="Alice">
+                       <img src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fHww" alt="">
+                       <p class="name">Prof. Khalid Alfatmi</p>
+                   </div>
+                   <div  onclick="profileDetail()" class="card" data-name="Alice">
+                       <img src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fHww" alt="">
+                       <p class="name">Prof. Ashish Awate</p>
+                   </div>
+                   <div  onclick="profileDetail()" class="card" data-name="Alice">
+                       <img src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fHww" alt="">
+                       <p class="name">Prof. Bhushan Nandwalkar</p>
+                   </div>
+                   <div onclick="profileDetail()" class="card" data-name="hello">
+                       <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="">
+                       <p class="name">Prof. Mayuri Kulkarni</p>
+                   </div>
+                   <div onclick="profileDetail()" class="card" data-name="John">
+                       <img src="https://img.freepik.com/premium-vector/avatar-profile-icon-flat-style-male-user-profile-vector-illustration-isolated-background-man-profile-sign-business-concept_157943-38764.jpg?semt=ais_hybrid&w=740" alt="">
+                       <p class="name">Prof. Umakant Mandawkar</p>
+                    </div>
+                   <div onclick="profileDetail()" class="card" data-name="me">
+                    <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="">
+                    <p class="name">Prof. Kiran Somwanshi </p>
+                   </div>
+                   <div onclick="profileDetail()" class="card" data-name="you">
+                    <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="">
+                    <p class="name">Prof. Amirkhan Pinjari</p>
+                   </div>
+                   <div onclick="profileDetail()" class="card" data-name="well">
+                    <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="">
+                    <p class="name">Prof. Rinku Sharma</p>
+                   </div>
+                   <div onclick="profileDetail()" class="card" data-name="done">
+                    <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="">
+                    <p class="name">Prof. Kavita Patil </p>
+                   </div>
+                   <div onclick="profileDetail()" class="card">
+                    <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="">
+                    <p class="name">Prof. </p>
+                   </div>
+               </div>
+               <div id="cardContainer1" class="NonTeaching">
+                <div  onclick="profileDetail()" class="card" data-name="Alice">
+                    <img src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fHww" alt="">
+                    <p class="name">Mr. Akshaykumar Jain</p>
+                </div>
+                <div onclick="profileDetail()" class="card" data-name="hello">
+                    <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="">
+                    <p  class="name">Mr. Samadhan Rajput </p>
+                </div>
+                <div onclick="profileDetail()" class="card" data-name="hello">
+                    <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="">
+                    <p class="name">Mr. Tejveersingh Tavar </p>
+                </div>
+                <div onclick="profileDetail()" class="card" data-name="hello">
+                    <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="">
+                    <p class="name">mukta</p>
+                </div>
+                <div onclick="profileDetail()" class="card" data-name="hello">
+                    <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="">
+                    <p class="name">mani</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <div class="proinfo">
+        <div class="profi">
+            <div class="img">
+                <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="">
+            </div>
+            <div class="bolet">
+                <li> <label for="">Name:</label> Pratiksha</li>
+                <li><label for="">Education:</label> SY Btech</li>
+                <li><label for="">role:</label> Student</li>
+                <li><label for="">role:</label> Student</li>
+                <li><label for="">role:</label> Student</li>
+                <li><label for="">role:</label> Student</li>
+
+            </div>
+        </div>
+        <div class="detail">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officiis soluta esse nobis reiciendis provident ratione quam illo blanditiis iure? Eligendi sunt est modi accusamus repellendus voluptas inventore commodi odit saepe eius aliquam, similique repudiandae quasi veniam excepturi sapiente maiores natus nemo quo. Quibusdam, debitis.
+            <br>
+            
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vel earum obcaecati enim a veniam suscipit facere dolorum, voluptatem, aspernatur dolor corporis neque commodi laboriosam, libero dicta ex ipsam nemo.
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, illum? Voluptates repudiandae sit beatae, ipsa aspernatur deleniti hic omnis quas ipsam, atque dignissimos?
+
+        </div>
+    </div> -->
+    <!-- <script>
+        function profile() {
+          window.location.href = "http://localhost/sign/frontend/profile.html";
+        }
+        function profileDetail() {
+          window.location.href = "http://localhost/sign/frontend/profile.html";
+        }
+        
+      </script> -->
+    <script src="script.js"></script>
+</body>
+</html>
