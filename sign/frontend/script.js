@@ -56,9 +56,14 @@ searchInput.addEventListener('input', function () {
 
 var proinfo  = document.getElementsByClassName("proinfo")
 
-function  profileDetail(){
-  window.location.href = "http://localhost/sign/frontend/profile.html";
-}
+  function profileDetail(id) {
+    window.location.href = `../back/profile.php?id=${id}`;
+  }
+
+
+// function  profileDetail(){
+//   window.location.href = "http://localhost/sign/frontend/profile.html";
+// }
 function  Back(){
   window.location.href = "http://localhost/sign/frontend/index.html";
 }
